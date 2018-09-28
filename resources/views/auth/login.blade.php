@@ -114,7 +114,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
                             <!--begin::Action-->
                             <div class="m-login__action">
-                                <a href="#" class="m-link">
+                                <a href="{{ route('password.request') }}" class="m-link">
                                     <span>Forgot Password ?</span>
                                 </a>
                                 <a href="#">
