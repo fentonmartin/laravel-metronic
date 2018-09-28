@@ -101,7 +101,7 @@ License: You must have a valid license purchased only from themeforest(the above
                             </div>
 
                             <!--begin::Form-->
-                            <form class="m-login__form m-form" action="">
+                    <form method="POST" action="{{ route('register') }}">
                                 <div class="form-group m-form__group">
                                     <input class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" type="text" placeholder="Name" name="name" autocomplete="off">
 
@@ -132,53 +132,18 @@ License: You must have a valid license purchased only from themeforest(the above
                                 <div class="form-group m-form__group">
                                     <input class="form-control m-input m-login__form-input--last" type="password" placeholder="Password confirm" name="password_confirmation">
                                 </div>
-                            </form>
-
-                            <!--end::Form-->
 
                             <!--begin::Action-->
                             <div class="m-login__action">
                                 <a href="#">
-                                    <button id="m_login_signin_submit" class="btn btn-primary m-btn m-btn--pill m-btn--custom m-btn--air m-login__btn m-login__btn--primary">Sign Up</button>
+                                    <button type="submit" id="m_login_signin_submit" class="btn btn-primary m-btn m-btn--pill m-btn--custom m-btn--air m-login__btn m-login__btn--primary">Register</button>
                                 </a>
                             </div>
+                            </form>
+
+                            <!--end::Form-->
 
                             <!--end::Action-->
-
-                            <!--begin::Divider-->
-                            <div class="m-login__form-divider">
-                                <div class="m-divider">
-                                    <span></span>
-                                    <span>OR</span>
-                                    <span></span>
-                                </div>
-                            </div>
-
-                            <!--end::Divider-->
-
-                            <!--begin::Options-->
-                            <div class="m-login__options">
-                                <a href="#" class="btn btn-primary m-btn m-btn--pill  m-btn  m-btn m-btn--icon">
-                                    <span>
-                                        <i class="fab fa-facebook-f"></i>
-                                        <span>Facebook</span>
-                                    </span>
-                                </a>
-                                <a href="#" class="btn btn-info m-btn m-btn--pill  m-btn  m-btn m-btn--icon">
-                                    <span>
-                                        <i class="fab fa-twitter"></i>
-                                        <span>Twitter</span>
-                                    </span>
-                                </a>
-                                <a href="#" class="btn btn-danger m-btn m-btn--pill  m-btn  m-btn m-btn--icon">
-                                    <span>
-                                        <i class="fab fa-google"></i>
-                                        <span>Google</span>
-                                    </span>
-                                </a>
-                            </div>
-
-                            <!--end::Options-->
                         </div>
 
                         <!--end::Signin-->
