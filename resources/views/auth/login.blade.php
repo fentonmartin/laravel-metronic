@@ -86,7 +86,7 @@ License: You must have a valid license purchased only from themeforest(the above
                     <!--begin::Head-->
                     <div class="m-login__head">
                         <span>Don't have an account?</span>
-                        <a href="#" class="m-link m--font-danger">Sign Up</a>
+                        <a href="{{ route('register') }}" class="m-link m--font-danger">Sign Up</a>
                     </div>
 
                     <!--end::Head-->
